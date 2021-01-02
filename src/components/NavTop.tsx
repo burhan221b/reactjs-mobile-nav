@@ -7,8 +7,8 @@ export interface NavTopProps {
 const NavTop: React.FunctionComponent<NavTopProps> = () => {
     return (
         <nav className="nav" id="nav-top">
-            <button id="nav-top-menu-button">&#9776;</button>
-            <div>PlaceHolderForSomething</div>
+            <button className="nav-top-left-menu-button">&#9776;</button>
+            <h2 className="nav-top-main-title">PlaceHolderForSomething</h2>
         </nav>
     );
 }

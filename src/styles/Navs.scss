@@ -8,6 +8,37 @@ nav.nav {
     width: 100%;
 }
 
+nav.nav#nav-top {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    background-color: #2d3e6d;
+    color: rgb(167, 174, 179) !important;
+}
+
+nav.nav#nav-top button.nav-top-left-menu-button {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 1rem;
+    align-self: start;
+    // color: rgb(167, 174, 179) !important;
+    color: #0384b8 !important;
+}
+
+nav.nav#nav-top .nav-top-main-title {
+    align-self: center;
+    margin: 0 auto;
+    // font-size: 1rem;
+}
+
 nav.nav#nav-bottom {
     display: flex;
     flex-direction: row;
