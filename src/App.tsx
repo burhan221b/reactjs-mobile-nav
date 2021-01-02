@@ -1,48 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouteMatch } from 'react-router-dom';
+import MainContent from './components/MainContent';
 import NavBottom from './components/NavBottom';
 import NavTop from './components/NavTop';
 import "./styles/App.scss";
 import "./styles/Navs.scss";
 
 const App = () => {
+    const routeMatch = useRouteMatch()
+    useEffect(() => {
+        return () => {
+        }
+    }, [routeMatch])
     return (
         <div className="App">
             {/* Top Nav */}
             <NavTop />
             {/* Main content */}
-            <main id="main-content">
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-                <h1>hello world</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores cumque mollitia non quisquam! Aperiam eius praesentium accusantium officia quaerat. In neque asperiores eligendi aliquam error ipsa rerum atque, quo numquam.</p>
-
-            </main>
+            <MainContent />
             {/* Bottom Nav */}
             <NavBottom />
         </div>

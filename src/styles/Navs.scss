@@ -12,7 +12,7 @@ nav.nav#nav-top {
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
-    position: fixed; /* Make it stick/fixed */
+    position: sticky; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 300ms; /* Transition effect when sliding down (and up) */
@@ -37,6 +37,11 @@ nav.nav#nav-top .nav-top-main-title {
     align-self: center;
     margin: 0 auto;
     // font-size: 1rem;
+}
+
+#main-content {
+    // top: 60px;
+    margin-top: 0.5rem;
 }
 
 nav.nav#nav-bottom {
