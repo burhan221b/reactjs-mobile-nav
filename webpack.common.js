@@ -8,7 +8,8 @@ module.exports = {
         rules: [
             { test: /\.tsx?$/, use: "ts-loader", include: path.resolve(__dirname, "src"), exclude: /node_modules/ },
             { test: /.html$/, use: "html-loader" },
-            { test: /\.(svg|png|jpe?g|gif)$/, use: [{ loader: 'file-loader', options: { name: "[name].[hash].[ext]", outputPath: "assets" } }] },
+            { test: /\.(png|jpe?g|gif)$/, use: [{ loader: 'file-loader', options: { name: "[name].[hash].[ext]", outputPath: "assets" } }] },
+            { test: /\.svg$/, use: [{ loader: '@svgr/webpack', options: { name: "[name].[hash].[ext]", outputPath: "assets" } }] },
         ]
     },
     plugins: [new HtmlWebpackPlugin({ template: "./src/template.html" })],
