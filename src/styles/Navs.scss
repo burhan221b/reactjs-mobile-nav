@@ -15,7 +15,7 @@ nav.nav#nav-top {
     position: fixed; /* Make it stick/fixed */
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    transition: top 300ms; /* Transition effect when sliding down (and up) */
     background-color: #2d3e6d;
     color: rgb(167, 174, 179) !important;
 }
