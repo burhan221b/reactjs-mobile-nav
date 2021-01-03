@@ -1,3 +1,10 @@
+// $navBackgroundColor: rgb(45, 62, 109);
+// $navHighlightColor: #0384b8;
+// $navTextColor: rgb(167, 174, 179);
+$navBackgroundColor: rgb(45, 62, 109);
+$navHighlightColor: rgb(62, 164, 238);
+$navTextColor: lighten(desaturate(adjust-hue($navHighlightColor, 20), 50.7), 10.2);
+
 nav.nav {
     // display: flex;
     // flex-direction: row;
@@ -16,8 +23,8 @@ nav.nav#nav-top {
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 300ms; /* Transition effect when sliding down (and up) */
-    background-color: #2d3e6d;
-    color: rgb(167, 174, 179) !important;
+    background-color: $navBackgroundColor;
+    color: $navTextColor !important;
 }
 
 nav.nav#nav-top button.nav-top-left-menu-button {
@@ -30,7 +37,7 @@ nav.nav#nav-top button.nav-top-left-menu-button {
     padding: 0 1rem;
     align-self: start;
     // color: rgb(167, 174, 179) !important;
-    color: #0384b8 !important;
+    color: $navHighlightColor !important;
 }
 
 nav.nav#nav-top .nav-top-main-title {
@@ -53,7 +60,7 @@ nav.nav#nav-bottom {
     bottom: 0;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(45, 62, 109);
+    background-color: $navBackgroundColor;
     color: #fff;
     z-index: 10;
 }
@@ -76,10 +83,10 @@ nav.nav#nav-bottom a div {
 
 .menu-icons {
     // fill: rgb(113, 157, 187) !important;
-    fill: rgb(167, 174, 179) !important;
+    fill: $navTextColor !important;
 }
 
 .menu-icons.active {
     // background-color: #3c59a9;
-    fill: #0384b8 !important;
+    fill: $navHighlightColor !important;
 }
