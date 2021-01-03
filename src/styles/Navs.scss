@@ -25,6 +25,7 @@ nav.nav#nav-top {
     transition: top 300ms; /* Transition effect when sliding down (and up) */
     background-color: $navBackgroundColor;
     color: $navTextColor !important;
+    height: 60px;
 }
 
 nav.nav#nav-top button.nav-top-left-menu-button {

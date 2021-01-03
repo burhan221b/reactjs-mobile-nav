@@ -23,10 +23,10 @@ const NavBottom: React.FunctionComponent<NavBottomProps> = () => {
             <a><div><img src={messagesIcon} className="menu-icons" /></div></a>
             <a><div><img src={gearIcon} className="menu-icons cls-1" /></div></a> */}
             <Link to={`/`} className="link-menu-icons"><div><HomeIcon className={`menu-icons ${pathname === '/' ? 'active' : ''}`} /></div></Link>
-            <Link to={`/likes`} className="link-menu-icons"><div><LikesIcon className={`menu-icons ${pathname === '/likes' ? 'active' : ''}`} /></div></Link>
-            <Link to={`/search`} className="link-menu-icons"><div><SearchIcon className={`menu-icons ${pathname === '/search' ? 'active' : ''}`} /></div></Link>
-            <Link to={`/messages`} className="link-menu-icons"><div><MessagesIcon className={`menu-icons ${pathname === '/messages' ? 'active' : ''}`} /></div></Link>
-            <Link to={`/settings`} className="link-menu-icons"><div><GearIcon className={`menu-icons ${pathname === '/settings' ? 'active' : ''}`} /></div></Link>
+            <Link to={`/likes`} className="link-menu-icons"><div><LikesIcon className={`menu-icons ${pathname.includes('/likes') ? 'active' : ''}`} /></div></Link>
+            <Link to={`/search`} className="link-menu-icons"><div><SearchIcon className={`menu-icons ${pathname.includes('/search') ? 'active' : ''}`} /></div></Link>
+            <Link to={`/messages`} className="link-menu-icons"><div><MessagesIcon className={`menu-icons ${pathname.includes('/messages') ? 'active' : ''}`} /></div></Link>
+            <Link to={`/settings`} className="link-menu-icons"><div><GearIcon className={`menu-icons ${pathname.includes('/settings') ? 'active' : ''}`} /></div></Link>
         </nav>
     );
 }
